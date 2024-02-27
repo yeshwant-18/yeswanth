@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(3, 0, 22);
+    background-color: #CC313D;
     font-family: sans-serif;
     color: azure;
     margin: 0;
@@ -12,10 +12,10 @@ body {
 .navbar {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    position: relative;
+    position: fixed;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: rgb(128, 0, 255);
+    background-color: #F7C5CC;
     width: 100%;
 }
 
@@ -23,7 +23,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 75px;
+}
+
+.boxone {
+    width: 100%;
+    list-style: none;
+    font-size: 22px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 6%;
+
 }
 
 .logo {
@@ -33,32 +46,21 @@ body {
 .logo a {
     font-size: 35px;
     font-weight: 600;
-    color: white;
-}
-
-.boxone {
-    list-style: none;
-    font-size: 22px;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.two {
-    display: inline-block;
-    height: 0%;
-    width: auto;
-    left: 5px;
+    color: #CC313D;
 }
 
 .heading {
     display: inline-block;
     height: 100px;
-    width: 60%;
+    width: 70%;
     margin-left: 80px;
     text-align: justify;
+}
+
+.hrline {
+    border: 5px solid azure;
+    border-radius: 5px;
+    width: 90%
 }
 
 h1 {
@@ -74,44 +76,46 @@ img {
     max-width: 300px;
 }
 
+.heading1 {
+    padding-left: 5%;
+    padding-right: 8%;
+}
+
 h3 {
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
     margin-left: 50px;
 }
 
-.asg {
+h2 {
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 50px;
-
-}
-
-.ask {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
     margin-left: 50px;
 }
 
-.ten {
-    color: azure;
-    font-size: 30px;
+.para {
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 50px;
+    text-align: justify;
 }
 
-.dula {
+.info {
     color: azure;
     display: block;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+}
+
+.para1 {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 50px;
-}
-
-.link {
-    display: inline-block;
-    margin-top: -35px;
+    text-align: justify;
+    font-style: italic;
 }
 
 .icon {
@@ -122,77 +126,33 @@ h3 {
 
 }
 
-.contact,
-.skills,
 .education,
+.skills,
 .project,
-.certification {
-    font-weight: bold;
-    padding-left: 50px;
-    font-size: 30px;
-    display: block;
-    margin-top: 50px;
-}
-
-.cid {
-    font-size: 18px;
-    padding-left: 50px;
-    color: white;
-}
-
-.certificationbox :hover {
-    color: rgb(0, 110, 255);
-}
-
+.certifications,
 .contact {
-    height: 50px;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-right: 8%;
 }
 
 .boxskills {
-    display: inline-block;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.sk {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
     margin-left: 50px;
-    float: left;
+    padding-top: 0%;
 }
 
-.ski {
-    margin-left: 50px;
-    float: left;
-}
-
-.degree {
-    font-size: 30px;
-}
-
-.Ed,
-.projectbox {
-    margin-left: 50px;
-}
-
-.projectitle {
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-.projectinfo {
-    font-style: italic;
-    font-size: 15px;
-
-}
-
-.end {
+.copyright {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.bottom-line {
+.bottom-hrline {
     margin-top: 65px;
-    background-color: rgb(255, 255, 255);
+    background-color: azure;
     height: 3px;
     width: 1300px;
 }
@@ -203,14 +163,21 @@ h3 {
     font-size: 25px;
     padding-top: 80px;
     padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .resume a {
-    color: aliceblue;
+    color: azure;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .resume :hover {
-    color: rgb(0, 225, 255);
+    color: rgb(234, 210, 210);
+}
+
+ul.ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
